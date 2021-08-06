@@ -1,6 +1,7 @@
 package com.od.requestModel;
 
 import com.od.dto.customer.CustomerDTO;
+import com.od.enums.OrderStatusType;
 
 import java.util.Date;
 
@@ -9,9 +10,9 @@ public class SearchOrderRequestModel {
     private CustomerDTO customer;
     private Date startDate;
     private Date endDate;
-    private String statusCode;
-    private Long startRecord;
-    private Long recordLimit;
+    private OrderStatusType statusCode;
+    private long startRecord;
+    private long recordLimit;
 
     public CustomerDTO getCustomer() {
         return customer;
@@ -37,27 +38,27 @@ public class SearchOrderRequestModel {
         this.endDate = endDate;
     }
 
-    public String getStatusCode() {
+    public OrderStatusType getStatusCode() {
         return statusCode;
     }
 
-    public void setStatusCode(String statusCode) {
+    public void setStatusCode(OrderStatusType statusCode) {
         this.statusCode = statusCode;
     }
 
-    public Long getStartRecord() {
+    public long getStartRecord() {
         return startRecord;
     }
 
-    public void setStartRecord(Long startRecord) {
+    public void setStartRecord(long startRecord) {
         this.startRecord = startRecord;
     }
 
-    public Long getRecordLimit() {
+    public long getRecordLimit() {
         return recordLimit;
     }
 
-    public void setRecordLimit(Long recordLimit) {
+    public void setRecordLimit(long recordLimit) {
         this.recordLimit = recordLimit;
     }
 }

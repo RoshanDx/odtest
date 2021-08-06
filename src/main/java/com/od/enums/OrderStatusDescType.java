@@ -5,7 +5,7 @@ public enum OrderStatusDescType {
     INPROGRESS("In Progress"),
     CANCELLED("Cancelled"),
     EXCEPTION("Unsuccessful"),
-    COMPLETED("Complete");
+    COMPLETED("Completed");
 
     private String orderStatusDesc;
 

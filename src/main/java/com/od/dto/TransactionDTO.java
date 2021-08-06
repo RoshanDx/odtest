@@ -12,10 +12,10 @@ import java.util.Date;
 import java.util.List;
 
 public class TransactionDTO {
+
     private long trxRefId;
 //    private String status;
 //    private String statusDesc;
-
     private OrderStatusType status;
     private OrderStatusDescType statusDesc;
 

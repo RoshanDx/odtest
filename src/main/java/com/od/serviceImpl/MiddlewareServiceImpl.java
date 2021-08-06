@@ -8,10 +8,7 @@ import com.od.model.Transaction;
 import com.od.repository.OrderRepository;
 import com.od.requestModel.CreateOrderRequest;
 import com.od.requestModel.SubmitOrdersRequestModel;
-import com.od.responseModel.CreateOrderResponseModel;
-import com.od.responseModel.GetCustomerResponseModel;
-import com.od.responseModel.GetCustomerRoleResponseModel;
-import com.od.responseModel.RetrieveUserResponseModel;
+import com.od.responseModel.*;
 import com.od.service.BackendService;
 import com.od.service.MiddlewareService;
 import org.modelmapper.ModelMapper;
@@ -41,6 +38,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         metaDTO.setCode(HttpStatus.OK.value());
 
         TransactionDTO transactionDTO = new TransactionDTO();
+
         transactionDTO.setStatus(OrderStatusType.SUBMITTED);
         transactionDTO.setStatusDesc(OrderStatusDescType.SUBMITTED);
         transactionDTO.setCreated(new Date());
@@ -53,6 +51,8 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         Transaction tx = mapper.map(transactionDTO, Transaction.class);
 
         orderRepository.save(tx);
+
+        responseModel.getTransaction().setTrxRefId(tx.getTrxRefId());
 
         SubmitOrdersRequestModel submitOrdersRequestModel = new SubmitOrdersRequestModel();
         submitOrdersRequestModel.setCustomerId(createOrderRequest.getCustomer().getId());
@@ -73,29 +73,53 @@ public class MiddlewareServiceImpl implements MiddlewareService {
     }
 
     public RetrieveUserResponseModel retrieveUser(String idType, String idNumber) {
+
         GetCustomerResponseModel customerResponseModel = backendService.retrieveUser(idType, idNumber);
         GetCustomerRoleResponseModel customerRoleResponseModel = backendService.getCustomerRole(customerResponseModel.getCustomer().getId());
 
         RetrieveUserResponseModel responseModel = new RetrieveUserResponseModel();
-        responseModel.setMeta(new MetaDTO(200));
-        responseModel.setCustomer(customerResponseModel.getCustomer());
-        responseModel.setRoles(customerRoleResponseModel.getRoles());
+        MetaDTO metaDTO = new MetaDTO();
+        if(customerRoleResponseModel != null) {
+
+            metaDTO.setCode(HttpStatus.OK.value());
+
+            responseModel.setMeta(metaDTO);
+            responseModel.setCustomer(customerResponseModel.getCustomer());
+            responseModel.setRoles(customerRoleResponseModel.getRoles());
+        }
 
         return responseModel;
     }
 
-    public TransactionDTO updateOrderStatus(Long transactionId, OrderStatusType status, String remarks) {
+    public UpdateOrderStatusResponseModel updateOrderStatus(Long transactionId, OrderStatusType status, OrderStatusDescType statusDesc, String remarks) {
+
         Transaction transaction = orderRepository.findOrderByTransactionId(transactionId);
 
+        UpdateOrderStatusResponseModel responseModel = new UpdateOrderStatusResponseModel();
+
         ModelMapper mapper = new ModelMapper();
-        TransactionDTO responseModel = mapper.map(transaction, TransactionDTO.class);
 
-        responseModel.setStatus(status);
-        responseModel.setRemarks(remarks);
-        responseModel.setLastUpdated(new Date());
+        if(transaction != null) {
+            MetaDTO metaDTO = new MetaDTO();
+            metaDTO.setCode(HttpStatus.OK.value());
 
-        orderRepository.save(mapper.map(responseModel, Transaction.class));
+            TransactionDTO transactionDTO = mapper.map(transaction, TransactionDTO.class);
+
+            transactionDTO.setStatus(status);
+            transactionDTO.setStatusDesc(statusDesc);
+            transactionDTO.setRemarks(remarks);
+            transactionDTO.setLastUpdated(new Date());
+            responseModel.setMeta(metaDTO);
+            responseModel.setTransaction(transactionDTO);
+
+            orderRepository.save(mapper.map(responseModel.getTransaction(), Transaction.class));
+        }
+
         return responseModel;
     }
 
+    public SearchOrderResponseModel searchOrder () {
+
+        return null;
+    }
 }
