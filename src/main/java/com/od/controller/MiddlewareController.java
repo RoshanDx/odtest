@@ -1,16 +1,18 @@
 package com.od.controller;
 
-import com.od.dto.TransactionDTO;
+import com.od.dto.transaction.TransactionDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
+import com.od.model.Transaction;
+import com.od.model.TransactionPage;
 import com.od.requestModel.CreateOrderRequest;
-import com.od.requestModel.SubmitOrdersRequestModel;
 import com.od.responseModel.CreateOrderResponseModel;
-import com.od.responseModel.GetCustomerRoleResponseModel;
 import com.od.responseModel.RetrieveUserResponseModel;
+import com.od.responseModel.SearchOrderResponseModel;
 import com.od.responseModel.UpdateOrderStatusResponseModel;
 import com.od.service.MiddlewareService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -43,6 +45,10 @@ public class MiddlewareController {
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
+    @RequestMapping(path= "/searchOrder", method = RequestMethod.GET)
+    public ResponseEntity<SearchOrderResponseModel> searchOrders(TransactionPage transactionPage) {
+        return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);
+    }
 
 
 }

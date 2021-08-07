@@ -12,6 +12,11 @@ public class MetaDTO {
         this.code = code;
     }
 
+    public MetaDTO(long code, long recordCount) {
+        this.code = code;
+        this.recordCount = recordCount;
+    }
+
     public MetaDTO() {
         super();
     }

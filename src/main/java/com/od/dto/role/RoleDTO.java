@@ -1,4 +1,4 @@
-package com.od.dto;
+package com.od.dto.role;
 
 public class RoleDTO {
 

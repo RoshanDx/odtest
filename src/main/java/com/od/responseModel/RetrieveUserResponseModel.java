@@ -1,6 +1,6 @@
 package com.od.responseModel;
 
-import com.od.dto.RoleDTO;
+import com.od.dto.role.RoleDTO;
 import com.od.dto.customer.CustomerDTO;
 import com.od.dto.customer.MetaDTO;
 

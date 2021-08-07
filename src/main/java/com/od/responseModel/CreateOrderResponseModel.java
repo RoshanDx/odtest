@@ -1,8 +1,7 @@
 package com.od.responseModel;
 
-import com.od.dto.TransactionDTO;
+import com.od.dto.transaction.TransactionDTO;
 import com.od.dto.customer.MetaDTO;
-import com.od.model.Transaction;
 
 public class CreateOrderResponseModel {
 

@@ -1,6 +1,6 @@
 package com.od.responseModel;
 
-import com.od.dto.RoleDTO;
+import com.od.dto.role.RoleDTO;
 import com.od.dto.customer.MetaDTO;
 
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 public class GetCustomerRoleResponseModel {
 
     private MetaDTO meta;
-    private List<RoleDTO> roles = new ArrayList<RoleDTO>();
+    private List<RoleDTO> roles = new ArrayList<>();
 
     public MetaDTO getMeta() {
         return meta;

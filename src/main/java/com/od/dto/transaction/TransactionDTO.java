@@ -1,12 +1,10 @@
-package com.od.dto;
+package com.od.dto.transaction;
 
 import com.od.dto.order.OrderDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
-import com.od.model.Order;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,11 +12,8 @@ import java.util.List;
 public class TransactionDTO {
 
     private long trxRefId;
-//    private String status;
-//    private String statusDesc;
     private OrderStatusType status;
     private OrderStatusDescType statusDesc;
-
     private String remarks;
     private Date created;
     private Date lastUpdated;
@@ -31,23 +26,6 @@ public class TransactionDTO {
     public void setTrxRefId(long trxRefId) {
         this.trxRefId = trxRefId;
     }
-
-//    public String getStatus() {
-//        return status;
-//    }
-//
-//    public void setStatus(String status) {
-//        this.status = status;
-//    }
-//
-//    public String getStatusDesc() {
-//        return statusDesc;
-//    }
-//
-//    public void setStatusDesc(String statusDesc) {
-//        this.statusDesc = statusDesc;
-//    }
-
 
     public OrderStatusType getStatus() {
         return status;

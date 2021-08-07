@@ -18,10 +18,6 @@ public class Transaction {
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private OrderStatusType status;
-//    private String status;
-
-//    @Column(name = "statusDesc")
-//    private String statusDesc;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "statusDesc")
@@ -46,14 +42,6 @@ public class Transaction {
         this.trxRefId = trxRefId;
     }
 
-//    public String getStatus() {
-//        return status;
-//    }
-//
-//    public void setStatus(String status) {
-//        this.status = status;
-//    }
-
     public OrderStatusType getStatus() {
         return status;
     }
@@ -61,14 +49,6 @@ public class Transaction {
     public void setStatus(OrderStatusType status) {
         this.status = status;
     }
-
-//    public String getStatusDesc() {
-//        return statusDesc;
-//    }
-//
-//    public void setStatusDesc(String statusDesc) {
-//        this.statusDesc = statusDesc;
-//    }
 
     public OrderStatusDescType getStatusDesc() {
         return statusDesc;

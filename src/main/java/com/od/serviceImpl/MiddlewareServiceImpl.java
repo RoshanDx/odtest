@@ -1,25 +1,34 @@
 package com.od.serviceImpl;
 
-import com.od.dto.TransactionDTO;
+import com.od.dto.transaction.TransactionDTO;
 import com.od.dto.customer.MetaDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
 import com.od.model.Transaction;
+import com.od.model.TransactionPage;
+import com.od.repository.OrderPageableRepository;
 import com.od.repository.OrderRepository;
 import com.od.requestModel.CreateOrderRequest;
 import com.od.requestModel.SubmitOrdersRequestModel;
 import com.od.responseModel.*;
 import com.od.service.BackendService;
 import com.od.service.MiddlewareService;
+import org.joda.time.DateTime;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.ui.Model;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.Optional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class MiddlewareServiceImpl implements MiddlewareService {
@@ -29,6 +38,9 @@ public class MiddlewareServiceImpl implements MiddlewareService {
 
     @Autowired
     BackendService backendService;
+
+    @Autowired
+    OrderPageableRepository orderPageRepository;
 
     public CreateOrderResponseModel createOrder(CreateOrderRequest createOrderRequest){
 
@@ -118,8 +130,40 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         return responseModel;
     }
 
-    public SearchOrderResponseModel searchOrder () {
+    public SearchOrderResponseModel getOrders (TransactionPage transactionPage) {
 
-        return null;
+        Pageable pageable = PageRequest.of(transactionPage.getStartRecord() - 1, transactionPage.getRecordLimit());
+
+        DateTime maxDateTime = new DateTime(transactionPage.getStartDate()).plusDays(7);
+        Date startDate = transactionPage.getStartDate();
+        Date endDate = maxDateTime.toDate();
+
+        if(startDate.before(endDate)) {
+            endDate = transactionPage.getEndDate();
+        }
+        else {
+            endDate = maxDateTime.toDate();
+        }
+
+        List<Transaction> transactions = orderRepository.getOrders(
+                startDate,
+                endDate,
+                transactionPage.getStatusCode(),
+                pageable
+                );
+
+        List<TransactionDTO> transactionsList =  transactions.stream().map(x->{
+            ModelMapper mapper = new ModelMapper();
+            return mapper.map(x, TransactionDTO.class);
+        }).collect(Collectors.toList());
+
+        SearchOrderResponseModel responseModel = new SearchOrderResponseModel();
+
+        if(!transactions.isEmpty()) {
+            responseModel.setMetaDTO(new MetaDTO(HttpStatus.OK.value(), transactions.size()));
+            responseModel.setTransactions(transactionsList);
+        }
+
+        return responseModel;
     }
 }
