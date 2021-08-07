@@ -134,23 +134,24 @@ public class MiddlewareServiceImpl implements MiddlewareService {
 
         Pageable pageable = PageRequest.of(transactionPage.getStartRecord() - 1, transactionPage.getRecordLimit());
 
+        //Get the max date if start date more than 7 days
         DateTime maxDateTime = new DateTime(transactionPage.getStartDate()).plusDays(7);
+
         Date startDate = transactionPage.getStartDate();
         Date endDate = maxDateTime.toDate();
 
         if(startDate.before(endDate)) {
-            endDate = transactionPage.getEndDate();
+            endDate = maxDateTime.toDate();
         }
         else {
-            endDate = maxDateTime.toDate();
+            endDate = transactionPage.getEndDate();
         }
 
         List<Transaction> transactions = orderRepository.getOrders(
                 startDate,
                 endDate,
                 transactionPage.getStatusCode(),
-                pageable
-                );
+                pageable);
 
         List<TransactionDTO> transactionsList =  transactions.stream().map(x->{
             ModelMapper mapper = new ModelMapper();
@@ -160,7 +161,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         SearchOrderResponseModel responseModel = new SearchOrderResponseModel();
 
         if(!transactions.isEmpty()) {
-            responseModel.setMetaDTO(new MetaDTO(HttpStatus.OK.value(), transactions.size()));
+            responseModel.setMeta(new MetaDTO(HttpStatus.OK.value(), transactions.size()));
             responseModel.setTransactions(transactionsList);
         }
 

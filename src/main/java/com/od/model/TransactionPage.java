@@ -12,9 +12,9 @@ import java.util.Optional;
 
 public class TransactionPage {
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date startDate = new Date();
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endDate = new Date();
     private OrderStatusType statusCode;
     private int startRecord = 1;

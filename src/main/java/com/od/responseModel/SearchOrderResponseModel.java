@@ -7,15 +7,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchOrderResponseModel {
-    private MetaDTO metaDTO;
+    private MetaDTO meta;
     private List<TransactionDTO> transactions = new ArrayList<>();
 
-    public MetaDTO getMetaDTO() {
-        return metaDTO;
+    public MetaDTO getMeta() {
+        return meta;
     }
 
-    public void setMetaDTO(MetaDTO metaDTO) {
-        this.metaDTO = metaDTO;
+    public void setMeta(MetaDTO meta) {
+        this.meta = meta;
     }
 
     public List<TransactionDTO> getTransactions() {
