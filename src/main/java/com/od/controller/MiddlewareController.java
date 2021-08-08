@@ -22,24 +22,20 @@ public class MiddlewareController {
     MiddlewareService middlewareService;
 
     @RequestMapping(path= "/order", method = RequestMethod.POST)
-    public ResponseEntity<CreateOrderResponseModel> createOrder(@RequestBody CreateOrderRequestModel createOrderRequest)
-    {
+    public ResponseEntity<CreateOrderResponseModel> createOrder(@RequestBody CreateOrderRequestModel createOrderRequest) {
         CreateOrderResponseModel responseModel = middlewareService.createOrder(createOrderRequest);
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
     @RequestMapping(path= "/user", method = RequestMethod.GET)
-    public ResponseEntity<RetrieveUserResponseModel> retrieveUser(@RequestParam String idType, @RequestParam String idNumber)
-    {
+    public ResponseEntity<RetrieveUserResponseModel> retrieveUser(@RequestParam String idType, @RequestParam String idNumber) {
         RetrieveUserResponseModel responseModel = middlewareService.retrieveUser(idType, idNumber);
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
     @RequestMapping(path= "/order/{trxRefId}/status", method = RequestMethod.PUT)
-    public ResponseEntity<UpdateOrderStatusResponseModel> retrieveUser(@PathVariable Long trxRefId, @RequestParam OrderStatusType status,
-                                                                       @RequestParam OrderStatusDescType statusDesc, @RequestParam String remarks)
-    {
-        UpdateOrderStatusResponseModel responseModel = middlewareService.updateOrderStatus(trxRefId, status, statusDesc, remarks);
+    public ResponseEntity<UpdateOrderStatusResponseModel> retrieveUser(@PathVariable Long trxRefId, @RequestParam OrderStatusType status, @RequestParam String remarks) {
+        UpdateOrderStatusResponseModel responseModel = middlewareService.updateOrderStatus(trxRefId, status, remarks);
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
@@ -47,6 +43,5 @@ public class MiddlewareController {
     public ResponseEntity<SearchOrderResponseModel> searchOrders(@RequestBody SearchOrderRequestModel transactionPage) {
         return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);
     }
-
 
 }

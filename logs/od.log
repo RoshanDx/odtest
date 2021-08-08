@@ -413,3 +413,316 @@
 2021-08-08 20:03:22.256  WARN 12960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-08-08 20:03:22.602  INFO 12960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-08-08 20:03:22.611  INFO 12960 --- [main] com.od.OdApplication                     : Started OdApplication in 3.745 seconds (JVM running for 4.089)
+2021-08-08 20:57:21.035  INFO 12960 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:57:21.037  INFO 12960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 20:57:21.042  INFO 12960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 20:57:23.576  INFO 20956 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 20956 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 20:57:23.579  INFO 20956 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 20:57:24.171  INFO 20956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 20:57:24.235  INFO 20956 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-08-08 20:57:24.794  INFO 20956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 20:57:24.804  INFO 20956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 20:57:24.805  INFO 20956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 20:57:24.889  INFO 20956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 20:57:24.889  INFO 20956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1266 ms
+2021-08-08 20:57:25.143  INFO 20956 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 20:57:25.210  INFO 20956 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 20:57:25.341  INFO 20956 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 20:57:25.440  INFO 20956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 20:57:25.761  INFO 20956 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 20:57:25.786  INFO 20956 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 20:57:26.485  INFO 20956 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 20:57:26.491  INFO 20956 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:57:26.965  WARN 20956 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 20:57:27.403  INFO 20956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 20:57:27.411  INFO 20956 --- [main] com.od.OdApplication                     : Started OdApplication in 4.242 seconds (JVM running for 4.583)
+2021-08-08 20:58:00.290  INFO 20956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 20:58:00.290  INFO 20956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 20:58:00.291  INFO 20956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 20:58:00.801  INFO 20956 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@13f1f550
+2021-08-08 20:58:00.816  INFO 20956 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@5016d42b
+2021-08-08 20:58:06.505 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 20:58:06.554 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 20:58:06.575 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 20:58:06.576 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 20:58:06.581 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 20:58:06.582 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 20:58:06.593 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into transactions (created, last_updated, remarks, status, status_desc, trx_ref_id) values (?, ?, ?, ?, ?, ?)
+2021-08-08 20:58:06.600 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 20:58:06.601 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 20:58:06.606 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 20:58:06.608 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 20:58:06.667 DEBUG 20956 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?
+2021-08-08 20:58:20.301 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select transactio0_.trx_ref_id as trx_ref_1_1_, transactio0_.created as created2_1_, transactio0_.last_updated as last_upd3_1_, transactio0_.remarks as remarks4_1_, transactio0_.status as status5_1_, transactio0_.status_desc as status_d6_1_ from transactions transactio0_ where (cast(transactio0_.created as date) between ? and ?) and transactio0_.status=? limit ?
+2021-08-08 20:58:20.322 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.335 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.340 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.342 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.344 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.346 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.348 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.350 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.352 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.353 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.355 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.357 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.359 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:20.361 DEBUG 20956 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 20:58:42.606  WARN 20956 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:00:34.729  WARN 20956 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:00:36.454  INFO 20956 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:00:36.455  INFO 20956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:00:36.460  INFO 20956 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:00:38.080  INFO 20076 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 20076 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:00:38.082  INFO 20076 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:00:38.633  INFO 20076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:00:38.689  INFO 20076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:00:39.245  INFO 20076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:00:39.254  INFO 20076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:00:39.254  INFO 20076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:00:39.343  INFO 20076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:00:39.343  INFO 20076 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1216 ms
+2021-08-08 21:00:39.530  INFO 20076 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:00:39.579  INFO 20076 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:00:39.692  INFO 20076 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:00:39.774  INFO 20076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:00:40.043  INFO 20076 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:00:40.066  INFO 20076 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:00:40.705  INFO 20076 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:00:40.711  INFO 20076 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:00:41.156  WARN 20076 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:00:41.499  INFO 20076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:00:41.509  INFO 20076 --- [main] com.od.OdApplication                     : Started OdApplication in 3.807 seconds (JVM running for 4.151)
+2021-08-08 21:01:24.695  INFO 20076 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:01:24.695  INFO 20076 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:01:24.696  INFO 20076 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 21:01:24.721  WARN 20076 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:01:39.122  INFO 20076 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:01:39.123  INFO 20076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:01:39.129  INFO 20076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:01:40.907  INFO 10288 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 10288 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:01:40.909  INFO 10288 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:01:41.463  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:01:41.524  INFO 10288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:01:42.084  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:01:42.093  INFO 10288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:01:42.093  INFO 10288 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:01:42.177  INFO 10288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:01:42.177  INFO 10288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1228 ms
+2021-08-08 21:01:42.381  INFO 10288 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:01:42.436  INFO 10288 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:01:42.559  INFO 10288 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:01:42.648  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:01:42.947  INFO 10288 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:01:42.972  INFO 10288 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:01:43.626  INFO 10288 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:01:43.632  INFO 10288 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:01:44.052  WARN 10288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:01:44.430  INFO 10288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:01:44.440  INFO 10288 --- [main] com.od.OdApplication                     : Started OdApplication in 3.906 seconds (JVM running for 4.294)
+2021-08-08 21:01:58.608  INFO 10288 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:01:58.608  INFO 10288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:01:58.609  INFO 10288 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 21:01:58.634  WARN 10288 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:02:09.315  WARN 10288 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:02:45.828  WARN 10288 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:02:56.822  WARN 10288 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:06:03.917  INFO 10288 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:06:03.919  INFO 10288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:06:03.925  INFO 10288 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:06:06.013  INFO 8308 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 8308 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:06:06.015  INFO 8308 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:06:06.545  INFO 8308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:06:06.608  INFO 8308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:06:07.158  INFO 8308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:06:07.168  INFO 8308 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:06:07.169  INFO 8308 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:06:07.245  INFO 8308 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:06:07.245  INFO 8308 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2021-08-08 21:06:07.441  INFO 8308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:06:07.494  INFO 8308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:06:07.615  INFO 8308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:06:07.701  INFO 8308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:06:08.000  INFO 8308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:06:08.024  INFO 8308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:06:08.667  INFO 8308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:06:08.674  INFO 8308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:06:09.599  WARN 8308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:06:10.139  INFO 8308 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:06:10.152  INFO 8308 --- [main] com.od.OdApplication                     : Started OdApplication in 4.53 seconds (JVM running for 4.87)
+2021-08-08 21:06:16.269  INFO 8308 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:06:16.269  INFO 8308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:06:16.270  INFO 8308 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-08 21:06:16.323  WARN 8308 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:08:40.579  WARN 8308 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:12:05.984  INFO 8308 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:12:05.985  INFO 8308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:12:05.991  INFO 8308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:14:43.375  INFO 8388 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 8388 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:14:43.377  INFO 8388 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:14:43.949  INFO 8388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:14:44.018  INFO 8388 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:14:44.603  INFO 8388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:14:44.612  INFO 8388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:14:44.612  INFO 8388 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:14:44.695  INFO 8388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:14:44.695  INFO 8388 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2021-08-08 21:14:44.890  INFO 8388 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:14:44.956  INFO 8388 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:14:45.087  INFO 8388 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:14:45.182  INFO 8388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:14:45.479  INFO 8388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:14:45.502  INFO 8388 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:14:46.169  INFO 8388 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:14:46.175  INFO 8388 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:14:46.632  WARN 8388 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:14:47.002  INFO 8388 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:14:47.012  INFO 8388 --- [main] com.od.OdApplication                     : Started OdApplication in 4.056 seconds (JVM running for 4.455)
+2021-08-08 21:14:49.546  INFO 8388 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:14:49.546  INFO 8388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:14:49.547  INFO 8388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-08 21:14:49.571  WARN 8388 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.od.enums.OrderStatusDescType'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam com.od.enums.OrderStatusDescType] for value 'Unsuccessful'; nested exception is java.lang.IllegalArgumentException: No enum constant com.od.enums.OrderStatusDescType.Unsuccessful]
+2021-08-08 21:15:16.804  INFO 8388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:15:16.805  INFO 8388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:15:16.811  INFO 8388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:15:18.994  INFO 7920 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 7920 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:15:18.996  INFO 7920 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:15:19.532  INFO 7920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:15:19.597  INFO 7920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:15:20.153  INFO 7920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:15:20.162  INFO 7920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:15:20.163  INFO 7920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:15:20.242  INFO 7920 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:15:20.242  INFO 7920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
+2021-08-08 21:15:20.413  INFO 7920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:15:20.459  INFO 7920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:15:20.574  INFO 7920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:15:20.662  INFO 7920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:15:20.956  INFO 7920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:15:20.980  INFO 7920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:15:21.600  INFO 7920 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:15:21.607  INFO 7920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:15:22.023  WARN 7920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:15:22.378  INFO 7920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:15:22.388  INFO 7920 --- [main] com.od.OdApplication                     : Started OdApplication in 3.777 seconds (JVM running for 4.119)
+2021-08-08 21:15:36.700  INFO 7920 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:15:36.701  INFO 7920 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:15:36.701  INFO 7920 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-08 21:15:36.737 DEBUG 7920 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select transactio0_.trx_ref_id as trx_ref_1_1_, transactio0_.created as created2_1_, transactio0_.last_updated as last_upd3_1_, transactio0_.remarks as remarks4_1_, transactio0_.status as status5_1_, transactio0_.status_desc as status_d6_1_ from transactions transactio0_ where transactio0_.trx_ref_id=?
+2021-08-08 21:15:36.808 DEBUG 7920 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 21:15:36.818 ERROR 7920 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: source cannot be null] with root cause
+
+java.lang.IllegalArgumentException: source cannot be null
+	at org.modelmapper.internal.util.Assert.notNull(Assert.java:53) ~[modelmapper-2.4.4.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:404) ~[modelmapper-2.4.4.jar:na]
+	at com.od.serviceImpl.MiddlewareServiceImpl.updateOrderStatus(MiddlewareServiceImpl.java:122) ~[classes/:na]
+	at com.od.controller.MiddlewareController.retrieveUser(MiddlewareController.java:38) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2021-08-08 21:16:24.294  INFO 7920 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:16:24.295  INFO 7920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:16:24.301  INFO 7920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:16:26.736  INFO 19528 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 19528 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:16:26.738  INFO 19528 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:16:27.317  INFO 19528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:16:27.384  INFO 19528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:16:27.950  INFO 19528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:16:27.961  INFO 19528 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:16:27.961  INFO 19528 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:16:28.051  INFO 19528 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:16:28.051  INFO 19528 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
+2021-08-08 21:16:28.258  INFO 19528 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:16:28.312  INFO 19528 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:16:28.440  INFO 19528 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:16:28.525  INFO 19528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:16:28.815  INFO 19528 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:16:28.839  INFO 19528 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:16:29.475  INFO 19528 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:16:29.482  INFO 19528 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:16:29.894  WARN 19528 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:16:30.265  INFO 19528 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:16:30.275  INFO 19528 --- [main] com.od.OdApplication                     : Started OdApplication in 3.936 seconds (JVM running for 4.292)
+2021-08-08 21:16:48.118  INFO 19528 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:16:48.118  INFO 19528 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:16:48.119  INFO 19528 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 21:16:48.158 DEBUG 19528 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select transactio0_.trx_ref_id as trx_ref_1_1_, transactio0_.created as created2_1_, transactio0_.last_updated as last_upd3_1_, transactio0_.remarks as remarks4_1_, transactio0_.status as status5_1_, transactio0_.status_desc as status_d6_1_ from transactions transactio0_ where transactio0_.trx_ref_id=?
+2021-08-08 21:16:48.237 DEBUG 19528 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 21:16:48.278 DEBUG 19528 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?
+2021-08-08 21:18:39.395  INFO 19528 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:18:39.396  INFO 19528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:18:39.402  INFO 19528 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:18:41.497  INFO 20936 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 20936 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:18:41.499  INFO 20936 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:18:42.017  INFO 20936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:18:42.074  INFO 20936 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:18:42.597  INFO 20936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:18:42.610  INFO 20936 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:18:42.610  INFO 20936 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:18:42.687  INFO 20936 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:18:42.687  INFO 20936 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1146 ms
+2021-08-08 21:18:42.904  INFO 20936 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:18:42.959  INFO 20936 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:18:43.082  INFO 20936 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:18:43.163  INFO 20936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:18:43.440  INFO 20936 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:18:43.462  INFO 20936 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:18:44.092  INFO 20936 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:18:44.098  INFO 20936 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:18:44.524  WARN 20936 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:18:44.879  INFO 20936 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:18:44.889  INFO 20936 --- [main] com.od.OdApplication                     : Started OdApplication in 3.768 seconds (JVM running for 4.141)
+2021-08-08 21:18:56.609  INFO 20936 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:18:56.609  INFO 20936 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:18:56.610  INFO 20936 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 21:18:56.649 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select transactio0_.trx_ref_id as trx_ref_1_1_, transactio0_.created as created2_1_, transactio0_.last_updated as last_upd3_1_, transactio0_.remarks as remarks4_1_, transactio0_.status as status5_1_, transactio0_.status_desc as status_d6_1_ from transactions transactio0_ where transactio0_.trx_ref_id=?
+2021-08-08 21:18:56.729 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
+2021-08-08 21:18:56.770 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?

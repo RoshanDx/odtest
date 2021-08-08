@@ -18,9 +18,6 @@ public class BackendServiceImpl implements BackendService {
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public HttpStatus submitOrder(SubmitOrdersRequestModel requestModel) {
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<SubmitOrdersRequestModel> requestEntity = new HttpEntity<>(headers);
 
         RestTemplate restTemplate = new RestTemplate();
 

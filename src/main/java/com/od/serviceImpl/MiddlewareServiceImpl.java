@@ -100,7 +100,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         return responseModel;
     }
 
-    public UpdateOrderStatusResponseModel updateOrderStatus(Long transactionId, OrderStatusType status, OrderStatusDescType statusDesc, String remarks) {
+    public UpdateOrderStatusResponseModel updateOrderStatus(Long transactionId, OrderStatusType status, String remarks) {
 
         Transaction transaction = orderRepository.findOrderByTransactionId(transactionId);
 
@@ -115,13 +115,11 @@ public class MiddlewareServiceImpl implements MiddlewareService {
             TransactionDTO transactionDTO = mapper.map(transaction, TransactionDTO.class);
 
             transactionDTO.setStatus(status);
-            transactionDTO.setStatusDesc(statusDesc);
             transactionDTO.setRemarks(remarks);
             transactionDTO.setLastUpdated(new Date());
             responseModel.setMeta(metaDTO);
-            responseModel.setTransaction(transactionDTO);
 
-            orderRepository.save(mapper.map(responseModel.getTransaction(), Transaction.class));
+            orderRepository.save(mapper.map(transactionDTO, Transaction.class));
         }
 
         return responseModel;

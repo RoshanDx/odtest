@@ -27,12 +27,4 @@ public interface OrderRepository extends CrudRepository<Transaction, Long> {
             OrderStatusType status,
             Pageable pageable);
 
-
-//    @Query("SELECT t FROM Transaction t WHERE t.created BETWEEN ?1 and ?2 AND t.status = ?3")
-//    List<Transaction> getOrders(
-//            Date startDate,
-//            Date endDate,
-//            OrderStatusType status,
-//            Pageable pageable);
-
 }

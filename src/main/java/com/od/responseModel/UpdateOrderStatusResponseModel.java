@@ -6,7 +6,6 @@ import com.od.dto.customer.MetaDTO;
 public class UpdateOrderStatusResponseModel {
 
     private MetaDTO meta;
-    private TransactionDTO transaction;
 
     public MetaDTO getMeta() {
         return meta;
@@ -16,11 +15,4 @@ public class UpdateOrderStatusResponseModel {
         this.meta = meta;
     }
 
-    public TransactionDTO getTransaction() {
-        return transaction;
-    }
-
-    public void setTransaction(TransactionDTO transaction) {
-        this.transaction = transaction;
-    }
 }

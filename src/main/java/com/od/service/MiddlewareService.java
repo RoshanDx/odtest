@@ -18,7 +18,6 @@ public interface MiddlewareService {
     UpdateOrderStatusResponseModel updateOrderStatus(
             Long transactionId,
             OrderStatusType status,
-            OrderStatusDescType statusDesc,
             String remarks);
 
     SearchOrderResponseModel getOrders (SearchOrderRequestModel transactionPage);
