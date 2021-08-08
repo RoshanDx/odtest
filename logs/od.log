@@ -726,3 +726,41 @@ java.lang.IllegalArgumentException: source cannot be null
 2021-08-08 21:18:56.649 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select transactio0_.trx_ref_id as trx_ref_1_1_, transactio0_.created as created2_1_, transactio0_.last_updated as last_upd3_1_, transactio0_.remarks as remarks4_1_, transactio0_.status as status5_1_, transactio0_.status_desc as status_d6_1_ from transactions transactio0_ where transactio0_.trx_ref_id=?
 2021-08-08 21:18:56.729 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select orders0_.transactions_orders_fk as transact4_0_0_, orders0_.id as id1_0_0_, orders0_.id as id1_0_1_, orders0_.code as code2_0_1_, orders0_.quantity as quantity3_0_1_ from orders orders0_ where orders0_.transactions_orders_fk=?
 2021-08-08 21:18:56.770 DEBUG 20936 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?
+2021-08-08 21:19:36.182  INFO 20936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:19:36.184  INFO 20936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 21:19:36.189  INFO 20936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 21:20:31.585  INFO 15816 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 15816 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 21:20:31.588  INFO 15816 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 21:20:32.160  INFO 15816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 21:20:32.232  INFO 15816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2021-08-08 21:20:32.809  INFO 15816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 21:20:32.819  INFO 15816 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 21:20:32.819  INFO 15816 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 21:20:32.895  INFO 15816 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 21:20:32.895  INFO 15816 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1261 ms
+2021-08-08 21:20:33.095  INFO 15816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 21:20:33.151  INFO 15816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 21:20:33.281  INFO 15816 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 21:20:33.372  INFO 15816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 21:20:33.668  INFO 15816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 21:20:33.693  INFO 15816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 21:20:34.371  INFO 15816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 21:20:34.378  INFO 15816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 21:20:34.793  WARN 15816 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 21:20:35.140  INFO 15816 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 21:20:35.150  INFO 15816 --- [main] com.od.OdApplication                     : Started OdApplication in 3.941 seconds (JVM running for 4.658)
+2021-08-08 21:21:49.077  INFO 15816 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 21:21:49.078  INFO 15816 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 21:21:49.079  INFO 15816 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 21:21:49.256 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 21:21:49.261 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 21:21:49.286 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 21:21:49.287 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 21:21:49.292 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 21:21:49.293 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 21:21:49.305 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into transactions (created, last_updated, remarks, status, status_desc, trx_ref_id) values (?, ?, ?, ?, ?, ?)
+2021-08-08 21:21:49.312 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 21:21:49.315 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 21:21:49.320 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 21:21:49.322 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 21:21:49.908 DEBUG 15816 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?

@@ -1,6 +1,5 @@
 package com.od.dto.customer;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.od.enums.CustomerIdType;
 
 public class IdentificationDTO {

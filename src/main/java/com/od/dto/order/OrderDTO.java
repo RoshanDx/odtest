@@ -1,12 +1,6 @@
 package com.od.dto.order;
 
 import com.od.enums.OrderCodeType;
-import com.od.model.Transaction;
-
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
 public class OrderDTO {
 
