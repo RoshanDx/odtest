@@ -18,3 +18,398 @@
 2021-08-08 18:47:58.261  WARN 10104 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2021-08-08 18:47:58.604  INFO 10104 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2021-08-08 18:47:58.613  INFO 10104 --- [main] com.od.OdApplication                     : Started OdApplication in 3.809 seconds (JVM running for 4.188)
+2021-08-08 19:16:57.681  INFO 10104 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:16:57.683  INFO 10104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:16:57.688  INFO 10104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:16:59.433  INFO 9848 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 9848 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:16:59.435  INFO 9848 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:16:59.987  INFO 9848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:17:00.061  INFO 9848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:17:00.661  INFO 9848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:17:00.679  INFO 9848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:17:00.679  INFO 9848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:17:00.780  INFO 9848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:17:00.780  INFO 9848 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1305 ms
+2021-08-08 19:17:00.976  INFO 9848 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:17:01.031  INFO 9848 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:17:01.169  INFO 9848 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:17:01.254  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:17:01.555  INFO 9848 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:17:01.579  INFO 9848 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:17:02.222  INFO 9848 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:17:02.230  INFO 9848 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:17:02.686  WARN 9848 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:17:03.112  INFO 9848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:17:03.123  INFO 9848 --- [main] com.od.OdApplication                     : Started OdApplication in 4.094 seconds (JVM running for 4.444)
+2021-08-08 19:17:13.537  INFO 9848 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:17:13.537  INFO 9848 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:17:13.538  INFO 9848 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:17:13.688 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 19:17:13.692 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 19:17:13.711 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 19:17:13.729 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 19:17:13.732 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2021-08-08 19:17:13.733 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2021-08-08 19:17:13.744 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into transactions (created, last_updated, remarks, status, status_desc, trx_ref_id) values (?, ?, ?, ?, ?, ?)
+2021-08-08 19:17:13.749 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 19:17:13.750 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into orders (code, quantity, id) values (?, ?, ?)
+2021-08-08 19:17:13.754 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 19:17:13.755 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update orders set transactions_orders_fk=? where id=?
+2021-08-08 19:17:25.991 DEBUG 9848 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update transactions set created=?, last_updated=?, remarks=?, status=?, status_desc=? where trx_ref_id=?
+2021-08-08 19:17:45.972  INFO 9848 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:17:45.974  INFO 9848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:17:45.978  INFO 9848 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:20:26.737  INFO 18988 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 18988 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:20:26.739  INFO 18988 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:20:27.289  INFO 18988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:20:27.354  INFO 18988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:20:27.893  INFO 18988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:20:27.902  INFO 18988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:20:27.903  INFO 18988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:20:27.980  INFO 18988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:20:27.981  INFO 18988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2021-08-08 19:20:28.174  INFO 18988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:20:28.225  INFO 18988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:20:28.346  INFO 18988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:20:28.428  INFO 18988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:20:28.701  INFO 18988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:20:28.723  INFO 18988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:20:29.343  INFO 18988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:20:29.350  INFO 18988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:20:29.759  WARN 18988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:20:30.124  INFO 18988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:20:30.135  INFO 18988 --- [main] com.od.OdApplication                     : Started OdApplication in 3.819 seconds (JVM running for 4.191)
+2021-08-08 19:20:32.948  INFO 18988 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:20:32.948  INFO 18988 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:20:32.949  INFO 18988 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:20:33.460  INFO 18988 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@3bed9614
+2021-08-08 19:20:33.477  INFO 18988 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@4b239a4f
+2021-08-08 19:31:28.895  INFO 18988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:31:28.896  INFO 18988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:31:28.901  INFO 18988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:31:31.126  INFO 1496 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 1496 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:31:31.128  INFO 1496 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:31:31.694  INFO 1496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:31:31.768  INFO 1496 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:31:32.349  INFO 1496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:31:32.358  INFO 1496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:31:32.358  INFO 1496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:31:32.438  INFO 1496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:31:32.438  INFO 1496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1265 ms
+2021-08-08 19:31:32.665  INFO 1496 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:31:32.742  INFO 1496 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:31:32.890  INFO 1496 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:31:32.992  INFO 1496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:31:33.307  INFO 1496 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:31:33.334  INFO 1496 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:31:34.311  INFO 1496 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:31:34.318  INFO 1496 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:31:34.713  WARN 1496 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:31:35.155  INFO 1496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:31:35.167  INFO 1496 --- [main] com.od.OdApplication                     : Started OdApplication in 4.458 seconds (JVM running for 4.805)
+2021-08-08 19:31:38.216  INFO 1496 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:31:38.217  INFO 1496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:31:38.218  INFO 1496 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:31:39.059  INFO 1496 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@260490cd
+2021-08-08 19:31:39.077  INFO 1496 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@7c7bda1c
+2021-08-08 19:34:01.110  INFO 1496 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:34:01.111  INFO 1496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:34:01.116  INFO 1496 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:34:03.330  INFO 16016 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 16016 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:34:03.333  INFO 16016 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:34:03.892  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:34:03.955  INFO 16016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:34:04.507  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:34:04.518  INFO 16016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:34:04.518  INFO 16016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:34:04.598  INFO 16016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:34:04.599  INFO 16016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2021-08-08 19:34:04.803  INFO 16016 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:34:04.853  INFO 16016 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:34:04.979  INFO 16016 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:34:05.061  INFO 16016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:34:05.361  INFO 16016 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:34:05.384  INFO 16016 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:34:06.070  INFO 16016 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:34:06.077  INFO 16016 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:34:06.461  WARN 16016 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:34:06.816  INFO 16016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:34:06.825  INFO 16016 --- [main] com.od.OdApplication                     : Started OdApplication in 3.872 seconds (JVM running for 4.219)
+2021-08-08 19:34:10.305  INFO 16016 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:34:10.305  INFO 16016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:34:10.306  INFO 16016 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:34:10.842  INFO 16016 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@6402888a
+2021-08-08 19:34:10.859  INFO 16016 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@77fe5c1e
+2021-08-08 19:34:34.732  INFO 16016 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:34:34.734  INFO 16016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:34:34.739  INFO 16016 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:34:37.079  INFO 464 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 464 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:34:37.081  INFO 464 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:34:37.623  INFO 464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:34:37.691  INFO 464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:34:38.225  INFO 464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:34:38.234  INFO 464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:34:38.235  INFO 464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:34:38.309  INFO 464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:34:38.310  INFO 464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1185 ms
+2021-08-08 19:34:38.500  INFO 464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:34:38.555  INFO 464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:34:38.677  INFO 464 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:34:38.766  INFO 464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:34:39.064  INFO 464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:34:39.090  INFO 464 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:34:39.682  INFO 464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:34:39.689  INFO 464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:34:40.129  WARN 464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:34:40.566  INFO 464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:34:40.577  INFO 464 --- [main] com.od.OdApplication                     : Started OdApplication in 3.908 seconds (JVM running for 4.291)
+2021-08-08 19:34:48.609  INFO 464 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:34:48.609  INFO 464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:34:48.610  INFO 464 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:34:48.862  INFO 464 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@22b24e4c
+2021-08-08 19:34:48.878  INFO 464 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@73437570
+2021-08-08 19:46:32.791  INFO 464 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:46:32.793  INFO 464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:46:32.798  INFO 464 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:46:35.304  INFO 7832 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 7832 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:46:35.306  INFO 7832 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:46:35.882  INFO 7832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:46:35.971  INFO 7832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:46:36.596  INFO 7832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:46:36.605  INFO 7832 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:46:36.605  INFO 7832 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:46:36.691  INFO 7832 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:46:36.692  INFO 7832 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+2021-08-08 19:46:36.940  INFO 7832 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:46:37.006  INFO 7832 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:46:37.130  INFO 7832 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:46:37.216  INFO 7832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:46:37.516  INFO 7832 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:46:37.540  INFO 7832 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:46:38.214  INFO 7832 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:46:38.221  INFO 7832 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:46:38.667  WARN 7832 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:46:39.004  INFO 7832 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:46:39.012  INFO 7832 --- [main] com.od.OdApplication                     : Started OdApplication in 4.115 seconds (JVM running for 4.456)
+2021-08-08 19:47:21.057  INFO 7832 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:47:21.058  INFO 7832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:47:21.064  INFO 7832 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:47:23.347  INFO 18324 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 18324 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:47:23.349  INFO 18324 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:47:23.916  INFO 18324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:47:23.987  INFO 18324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:47:24.560  INFO 18324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:47:24.569  INFO 18324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:47:24.570  INFO 18324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:47:24.651  INFO 18324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:47:24.651  INFO 18324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1263 ms
+2021-08-08 19:47:24.878  INFO 18324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:47:24.936  INFO 18324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:47:25.057  INFO 18324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:47:25.140  INFO 18324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:47:25.430  INFO 18324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:47:25.454  INFO 18324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:47:26.095  INFO 18324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:47:26.101  INFO 18324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:47:26.526  WARN 18324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:47:26.869  INFO 18324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:47:26.879  INFO 18324 --- [main] com.od.OdApplication                     : Started OdApplication in 3.907 seconds (JVM running for 4.275)
+2021-08-08 19:47:30.224  INFO 18324 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:47:30.224  INFO 18324 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:47:30.225  INFO 18324 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:47:30.747  INFO 18324 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@25cc93a5
+2021-08-08 19:47:30.767  INFO 18324 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@614e9e2e
+2021-08-08 19:48:13.300  INFO 18324 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:48:13.301  INFO 18324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:48:13.306  INFO 18324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:48:15.689  INFO 1056 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 1056 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:48:15.691  INFO 1056 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:48:16.237  INFO 1056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:48:16.298  INFO 1056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:48:16.904  INFO 1056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:48:16.924  INFO 1056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:48:16.925  INFO 1056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:48:17.015  INFO 1056 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:48:17.015  INFO 1056 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1279 ms
+2021-08-08 19:48:17.203  INFO 1056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:48:17.252  INFO 1056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:48:17.366  INFO 1056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:48:17.455  INFO 1056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:48:17.748  INFO 1056 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:48:17.774  INFO 1056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:48:18.412  INFO 1056 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:48:18.421  INFO 1056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:48:18.824  WARN 1056 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:48:19.180  INFO 1056 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:48:19.189  INFO 1056 --- [main] com.od.OdApplication                     : Started OdApplication in 3.882 seconds (JVM running for 4.232)
+2021-08-08 19:48:21.190  INFO 1056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:48:21.191  INFO 1056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:48:21.192  INFO 1056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:48:21.440  INFO 1056 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@36612b73
+2021-08-08 19:48:21.458  INFO 1056 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@3cc6a692
+2021-08-08 19:51:00.464  INFO 1056 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:51:00.466  INFO 1056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:51:00.471  INFO 1056 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:51:02.847  INFO 20652 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 20652 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:51:02.850  INFO 20652 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:51:03.424  INFO 20652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:51:03.489  INFO 20652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:51:04.049  INFO 20652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:51:04.060  INFO 20652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:51:04.060  INFO 20652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:51:04.143  INFO 20652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:51:04.143  INFO 20652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1252 ms
+2021-08-08 19:51:04.352  INFO 20652 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:51:04.405  INFO 20652 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:51:04.527  INFO 20652 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:51:04.611  INFO 20652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:51:04.909  INFO 20652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:51:04.932  INFO 20652 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:51:05.571  INFO 20652 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:51:05.578  INFO 20652 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:51:06.010  WARN 20652 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:51:06.366  INFO 20652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:51:06.376  INFO 20652 --- [main] com.od.OdApplication                     : Started OdApplication in 3.931 seconds (JVM running for 4.267)
+2021-08-08 19:51:13.724  INFO 20652 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:51:13.725  INFO 20652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:51:13.725  INFO 20652 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-08-08 19:51:14.007  INFO 20652 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@7d011047
+2021-08-08 19:51:14.027  INFO 20652 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@393c185
+2021-08-08 19:51:39.600  INFO 20652 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@25605ab3
+2021-08-08 19:51:39.615  INFO 20652 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@a25671b
+2021-08-08 19:57:23.073  WARN 20652 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m48s61ms848µs1ns).
+2021-08-08 19:57:23.133  INFO 20652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:57:23.135  INFO 20652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:57:23.140  INFO 20652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:57:25.556  INFO 17368 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 17368 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:57:25.558  INFO 17368 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:57:26.140  INFO 17368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:57:26.203  INFO 17368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:57:26.774  INFO 17368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:57:26.787  INFO 17368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:57:26.787  INFO 17368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:57:26.867  INFO 17368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:57:26.867  INFO 17368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1265 ms
+2021-08-08 19:57:27.079  INFO 17368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:57:27.138  INFO 17368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:57:27.261  INFO 17368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:57:27.349  INFO 17368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:57:27.630  INFO 17368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:57:27.655  INFO 17368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:57:28.297  INFO 17368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:57:28.304  INFO 17368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:57:28.749  WARN 17368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:57:29.081  INFO 17368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:57:29.093  INFO 17368 --- [main] com.od.OdApplication                     : Started OdApplication in 3.969 seconds (JVM running for 4.309)
+2021-08-08 19:57:32.351  INFO 17368 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:57:32.351  INFO 17368 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:57:32.352  INFO 17368 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:57:32.814  INFO 17368 --- [http-nio-8080-exec-3] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@6f8ba371
+2021-08-08 19:57:32.832  INFO 17368 --- [http-nio-8080-exec-3] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@6c99c3c
+2021-08-08 19:57:43.021  INFO 17368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:57:43.023  INFO 17368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:57:43.028  INFO 17368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:57:45.452  INFO 4516 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 4516 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:57:45.454  INFO 4516 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:57:45.988  INFO 4516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:57:46.046  INFO 4516 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:57:46.583  INFO 4516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:57:46.593  INFO 4516 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:57:46.593  INFO 4516 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:57:46.672  INFO 4516 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:57:46.673  INFO 4516 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1178 ms
+2021-08-08 19:57:46.856  INFO 4516 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:57:46.914  INFO 4516 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:57:47.032  INFO 4516 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:57:47.116  INFO 4516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:57:47.418  INFO 4516 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:57:47.442  INFO 4516 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:57:48.107  INFO 4516 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:57:48.115  INFO 4516 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:57:48.535  WARN 4516 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:57:48.897  INFO 4516 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:57:48.907  INFO 4516 --- [main] com.od.OdApplication                     : Started OdApplication in 3.834 seconds (JVM running for 4.184)
+2021-08-08 19:57:51.917  INFO 4516 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:57:51.917  INFO 4516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:57:51.918  INFO 4516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:57:52.183  INFO 4516 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@1dd48c14
+2021-08-08 19:57:52.200  INFO 4516 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@43efa725
+2021-08-08 19:58:27.478  INFO 4516 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:58:27.479  INFO 4516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 19:58:27.484  INFO 4516 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 19:58:29.865  INFO 7372 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 7372 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 19:58:29.867  INFO 7372 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 19:58:30.467  INFO 7372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 19:58:30.539  INFO 7372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2021-08-08 19:58:31.152  INFO 7372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 19:58:31.160  INFO 7372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 19:58:31.161  INFO 7372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 19:58:31.238  INFO 7372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 19:58:31.238  INFO 7372 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1324 ms
+2021-08-08 19:58:31.439  INFO 7372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 19:58:31.494  INFO 7372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 19:58:31.615  INFO 7372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 19:58:31.701  INFO 7372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 19:58:31.989  INFO 7372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 19:58:32.014  INFO 7372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 19:58:32.692  INFO 7372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 19:58:32.699  INFO 7372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 19:58:33.152  WARN 7372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 19:58:33.530  INFO 7372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 19:58:33.539  INFO 7372 --- [main] com.od.OdApplication                     : Started OdApplication in 4.077 seconds (JVM running for 4.432)
+2021-08-08 19:58:39.092  INFO 7372 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 19:58:39.092  INFO 7372 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 19:58:39.093  INFO 7372 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 19:58:39.352  INFO 7372 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@25feefea
+2021-08-08 19:58:39.368  INFO 7372 --- [http-nio-8080-exec-2] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@3177bd32
+2021-08-08 20:00:34.335  INFO 7372 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:00:34.337  INFO 7372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 20:00:34.342  INFO 7372 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 20:00:36.876  INFO 9900 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 9900 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 20:00:36.878  INFO 9900 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 20:00:37.439  INFO 9900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 20:00:37.509  INFO 9900 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2021-08-08 20:00:38.101  INFO 9900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 20:00:38.113  INFO 9900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 20:00:38.113  INFO 9900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 20:00:38.196  INFO 9900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 20:00:38.196  INFO 9900 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1275 ms
+2021-08-08 20:00:38.386  INFO 9900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 20:00:38.446  INFO 9900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 20:00:38.583  INFO 9900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 20:00:38.679  INFO 9900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 20:00:38.974  INFO 9900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 20:00:38.997  INFO 9900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 20:00:39.652  INFO 9900 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 20:00:39.660  INFO 9900 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:00:40.083  WARN 9900 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 20:00:40.424  INFO 9900 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 20:00:40.435  INFO 9900 --- [main] com.od.OdApplication                     : Started OdApplication in 3.928 seconds (JVM running for 4.277)
+2021-08-08 20:00:42.336  INFO 9900 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-08 20:00:42.336  INFO 9900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-08 20:00:42.337  INFO 9900 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-08 20:00:42.656  INFO 9900 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : CustomerDTO com.od.responseModel.GetCustomerResponseModel@7b7e8f9f
+2021-08-08 20:00:42.673  INFO 9900 --- [http-nio-8080-exec-1] com.od.serviceImpl.BackendServiceImpl    : RoleDTO com.od.responseModel.GetCustomerRoleResponseModel@52c06cf8
+2021-08-08 20:03:15.380  INFO 9900 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:03:15.381  INFO 9900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-08 20:03:15.386  INFO 9900 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-08 20:03:19.241  INFO 12960 --- [main] com.od.OdApplication                     : Starting OdApplication using Java 16.0.1 on DX with PID 12960 (C:\Users\DX\Documents\GitHub\od\target\classes started by DX in C:\Users\DX\Documents\GitHub\od)
+2021-08-08 20:03:19.243  INFO 12960 --- [main] com.od.OdApplication                     : No active profile set, falling back to default profiles: default
+2021-08-08 20:03:19.779  INFO 12960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-08 20:03:19.835  INFO 12960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2021-08-08 20:03:20.382  INFO 12960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-08-08 20:03:20.390  INFO 12960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-08 20:03:20.390  INFO 12960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-08 20:03:20.472  INFO 12960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-08 20:03:20.473  INFO 12960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
+2021-08-08 20:03:20.674  INFO 12960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-08 20:03:20.728  INFO 12960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-08 20:03:20.853  INFO 12960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-08 20:03:20.932  INFO 12960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-08 20:03:21.218  INFO 12960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-08 20:03:21.241  INFO 12960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-08 20:03:21.859  INFO 12960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-08 20:03:21.865  INFO 12960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-08 20:03:22.256  WARN 12960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-08 20:03:22.602  INFO 12960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-08 20:03:22.611  INFO 12960 --- [main] com.od.OdApplication                     : Started OdApplication in 3.745 seconds (JVM running for 4.089)

@@ -88,6 +88,12 @@ public class MiddlewareServiceImpl implements MiddlewareService {
 
             responseModel.setMeta(metaDTO);
             responseModel.setCustomer(customerResponseModel.getCustomer());
+
+            String identificationNum = responseModel.getCustomer().getIdentification().getIdNumber();
+            String maskedId = identificationNum.replaceAll("[^\\n](?=.*?\\d{4})","*");
+
+            responseModel.getCustomer().getIdentification().setIdNumber(maskedId);
+
             responseModel.setRoles(customerRoleResponseModel.getRoles());
         }
 

@@ -43,11 +43,6 @@ public class MiddlewareController {
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
-//    @RequestMapping(path= "/searchOrder", method = RequestMethod.GET)
-//    public ResponseEntity<SearchOrderResponseModel> searchOrders(TransactionPage transactionPage) {
-//        return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);
-//    }
-
     @RequestMapping(path= "/searchOrder", method = RequestMethod.POST)
     public ResponseEntity<SearchOrderResponseModel> searchOrders(@RequestBody SearchOrderRequestModel transactionPage) {
         return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);

@@ -2,6 +2,7 @@ package com.od.dto.customer;
 
 import com.od.enums.GenderType;
 
+import javax.validation.constraints.Email;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class DetailsDTO {
     private String name;
     private GenderType gender;
     private String dateOfBirth;
+    @Email(message = "Email should be valid")
     private String email;
     private String nationality;
     private String race;
