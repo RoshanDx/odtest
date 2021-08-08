@@ -13,14 +13,6 @@ public class OrderDTO {
     private OrderCodeType code;
     private double quantity;
 
-//    public String getCode() {
-//        return code;
-//    }
-//
-//    public void setCode(String code) {
-//        this.code = code;
-//    }
-
     public OrderCodeType getCode() {
         return code;
     }

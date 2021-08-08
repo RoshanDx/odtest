@@ -7,14 +7,6 @@ public class IdentificationDTO {
     private CustomerIdType idType;
     private String idNumber;
 
-//    public String getIdType() {
-//        return idType;
-//    }
-//
-//    public void setIdType(String idType) {
-//        this.idType = idType;
-//    }
-
     public CustomerIdType getIdType() {
         return idType;
     }

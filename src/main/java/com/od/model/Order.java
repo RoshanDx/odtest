@@ -11,10 +11,8 @@ import java.io.Serializable;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-//    @Column(name = "code")
-//    private String code;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "code")
@@ -23,16 +21,6 @@ public class Order {
     @Column(name = "quantity")
     private double quantity;
 
-//    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
-//    @JoinColumn(
-//            name = "transaction_id",
-//            nullable = false,
-//            foreignKey = @ForeignKey(
-//                    name = "fk_orders_transactions_id"
-//            )
-//    )
-//    private Transaction transaction;
-
     public long getId() {
         return id;
     }
@@ -40,14 +28,6 @@ public class Order {
     public void setId(long id) {
         this.id = id;
     }
-
-//    public String getCode() {
-//        return code;
-//    }
-//
-//    public void setCode(String code) {
-//        this.code = code;
-//    }
 
     public OrderCodeType getCode() {
         return code;

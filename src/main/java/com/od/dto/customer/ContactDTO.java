@@ -16,14 +16,6 @@ public class ContactDTO {
         this.id = id;
     }
 
-//    public String getType() {
-//        return type;
-//    }
-//
-//    public void setType(String type) {
-//        this.type = type;
-//    }
-
     public ContactType getType() {
         return type;
     }

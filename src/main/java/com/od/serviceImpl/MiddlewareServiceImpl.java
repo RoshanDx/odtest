@@ -6,7 +6,6 @@ import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
 import com.od.model.Transaction;
 import com.od.requestModel.SearchOrderRequestModel;
-import com.od.repository.OrderPageableRepository;
 import com.od.repository.OrderRepository;
 import com.od.requestModel.CreateOrderRequestModel;
 import com.od.requestModel.SubmitOrdersRequestModel;
@@ -33,9 +32,6 @@ public class MiddlewareServiceImpl implements MiddlewareService {
 
     @Autowired
     BackendService backendService;
-
-    @Autowired
-    OrderPageableRepository orderPageRepository;
 
     public CreateOrderResponseModel createOrder(CreateOrderRequestModel createOrderRequest){
 

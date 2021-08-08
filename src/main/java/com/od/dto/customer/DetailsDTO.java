@@ -9,7 +9,6 @@ public class DetailsDTO {
 
     private String salutation;
     private String name;
-//    private String gender;
     private GenderType gender;
     private String dateOfBirth;
     private String email;
@@ -32,14 +31,6 @@ public class DetailsDTO {
     public void setName(String name) {
         this.name = name;
     }
-
-//    public String getGender() {
-//        return gender;
-//    }
-//
-//    public void setGender(String gender) {
-//        this.gender = gender;
-//    }
 
     public GenderType getGender() {
         return gender;
