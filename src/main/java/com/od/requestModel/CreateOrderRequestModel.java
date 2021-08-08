@@ -6,7 +6,7 @@ import com.od.dto.order.OrderDTO;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateOrderRequest {
+public class CreateOrderRequestModel {
 
     private CustomerDTO customer;
     private List<OrderDTO> orders = new ArrayList<>();

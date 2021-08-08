@@ -1,18 +1,26 @@
 package com.od.requestModel;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.od.dto.customer.CustomerDTO;
 import com.od.enums.OrderStatusType;
+import org.springframework.data.domain.Sort;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import java.util.Date;
+import java.util.Optional;
 
 public class SearchOrderRequestModel {
 
     private CustomerDTO customer;
-    private Date startDate;
-    private Date endDate;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date startDate = new Date();
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date endDate = new Date();
     private OrderStatusType statusCode;
-    private long startRecord;
-    private long recordLimit;
+    private int startRecord = 1;
+    private int recordLimit = 10;
 
     public CustomerDTO getCustomer() {
         return customer;
@@ -46,19 +54,20 @@ public class SearchOrderRequestModel {
         this.statusCode = statusCode;
     }
 
-    public long getStartRecord() {
+    public int getStartRecord() {
         return startRecord;
     }
 
-    public void setStartRecord(long startRecord) {
+    public void setStartRecord(int startRecord) {
         this.startRecord = startRecord;
     }
 
-    public long getRecordLimit() {
+    public int getRecordLimit() {
         return recordLimit;
     }
 
-    public void setRecordLimit(long recordLimit) {
+    public void setRecordLimit(int recordLimit) {
         this.recordLimit = recordLimit;
     }
+
 }

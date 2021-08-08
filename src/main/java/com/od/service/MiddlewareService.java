@@ -1,20 +1,17 @@
 package com.od.service;
 
-import com.od.dto.transaction.TransactionDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
-import com.od.model.Transaction;
-import com.od.model.TransactionPage;
-import com.od.requestModel.CreateOrderRequest;
+import com.od.requestModel.SearchOrderRequestModel;
+import com.od.requestModel.CreateOrderRequestModel;
 import com.od.responseModel.CreateOrderResponseModel;
 import com.od.responseModel.RetrieveUserResponseModel;
 import com.od.responseModel.SearchOrderResponseModel;
 import com.od.responseModel.UpdateOrderStatusResponseModel;
-import org.springframework.data.domain.Page;
 
 public interface MiddlewareService {
 
-    CreateOrderResponseModel createOrder(CreateOrderRequest createOrderRequest);
+    CreateOrderResponseModel createOrder(CreateOrderRequestModel createOrderRequest);
 
     RetrieveUserResponseModel retrieveUser(String idType, String idNumber);
 
@@ -24,6 +21,6 @@ public interface MiddlewareService {
             OrderStatusDescType statusDesc,
             String remarks);
 
-    SearchOrderResponseModel getOrders (TransactionPage transactionPage);
+    SearchOrderResponseModel getOrders (SearchOrderRequestModel transactionPage);
 
 }

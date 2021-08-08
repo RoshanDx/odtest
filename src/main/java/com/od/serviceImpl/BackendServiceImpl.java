@@ -1,5 +1,6 @@
 package com.od.serviceImpl;
 
+import com.od.api.BackendAPI;
 import com.od.requestModel.SubmitOrdersRequestModel;
 import com.od.responseModel.GetCustomerResponseModel;
 import com.od.responseModel.GetCustomerRoleResponseModel;
@@ -25,7 +26,7 @@ public class BackendServiceImpl implements BackendService {
         String url = "https://avocado.od-tech.my/api/order";
 
         ResponseEntity<SubmitOrdersRequestModel> response = restTemplate.postForEntity(
-                url,
+                BackendAPI.SUBMIT_ORDERS.getGetAPI(),
                 requestModel,
                 SubmitOrdersRequestModel.class);
 
@@ -38,9 +39,9 @@ public class BackendServiceImpl implements BackendService {
         HttpEntity<GetCustomerResponseModel> requestEntity = new HttpEntity<>(headers);
 
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://avocado.od-tech.my/api/customer";
+//        String url = "https://avocado.od-tech.my/api/customer";
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(BackendAPI.GET_CUSTOMER.getGetAPI())
                 .queryParam("idType", idType)
                 .queryParam("idNumber", idNumber);
 
@@ -63,9 +64,9 @@ public class BackendServiceImpl implements BackendService {
         HttpEntity<GetCustomerRoleResponseModel> requestEntity = new HttpEntity<>(headers);
 
         RestTemplate restTemplate = new RestTemplate();
-        String url = "https://avocado.od-tech.my/api/customerRole";
+//        String url = "https://avocado.od-tech.my/api/customerRole";
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(BackendAPI.GET_CUSTOMER_ROLE.getGetAPI())
                 .queryParam("customerId", customerId);
 
         ResponseEntity<GetCustomerRoleResponseModel> response = restTemplate.exchange(

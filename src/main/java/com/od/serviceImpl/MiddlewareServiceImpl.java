@@ -5,10 +5,10 @@ import com.od.dto.customer.MetaDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
 import com.od.model.Transaction;
-import com.od.model.TransactionPage;
+import com.od.requestModel.SearchOrderRequestModel;
 import com.od.repository.OrderPageableRepository;
 import com.od.repository.OrderRepository;
-import com.od.requestModel.CreateOrderRequest;
+import com.od.requestModel.CreateOrderRequestModel;
 import com.od.requestModel.SubmitOrdersRequestModel;
 import com.od.responseModel.*;
 import com.od.service.BackendService;
@@ -16,16 +16,11 @@ import com.od.service.MiddlewareService;
 import org.joda.time.DateTime;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -42,7 +37,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
     @Autowired
     OrderPageableRepository orderPageRepository;
 
-    public CreateOrderResponseModel createOrder(CreateOrderRequest createOrderRequest){
+    public CreateOrderResponseModel createOrder(CreateOrderRequestModel createOrderRequest){
 
         CreateOrderResponseModel responseModel = new CreateOrderResponseModel();
 
@@ -56,7 +51,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         transactionDTO.setCreated(new Date());
         transactionDTO.getOrders().addAll(createOrderRequest.getOrders());
 
-        responseModel.setMetaDTO(metaDTO);
+        responseModel.setMeta(metaDTO);
         responseModel.setTransaction(transactionDTO);
 
         ModelMapper mapper = new ModelMapper();
@@ -130,7 +125,7 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         return responseModel;
     }
 
-    public SearchOrderResponseModel getOrders (TransactionPage transactionPage) {
+    public SearchOrderResponseModel getOrders (SearchOrderRequestModel transactionPage) {
 
         Pageable pageable = PageRequest.of(transactionPage.getStartRecord() - 1, transactionPage.getRecordLimit());
 
@@ -138,18 +133,18 @@ public class MiddlewareServiceImpl implements MiddlewareService {
         DateTime maxDateTime = new DateTime(transactionPage.getStartDate()).plusDays(7);
 
         Date startDate = transactionPage.getStartDate();
-        Date endDate = maxDateTime.toDate();
+        Date maxEndDate = maxDateTime.toDate();
 
-        if(startDate.before(endDate)) {
-            endDate = maxDateTime.toDate();
+        if(maxEndDate.after(transactionPage.getEndDate())) {
+            maxEndDate = transactionPage.getEndDate();
         }
         else {
-            endDate = transactionPage.getEndDate();
+            maxEndDate = maxDateTime.toDate();
         }
 
         List<Transaction> transactions = orderRepository.getOrders(
                 startDate,
-                endDate,
+                maxEndDate,
                 transactionPage.getStatusCode(),
                 pageable);
 

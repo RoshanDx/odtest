@@ -1,18 +1,15 @@
 package com.od.controller;
 
-import com.od.dto.transaction.TransactionDTO;
 import com.od.enums.OrderStatusDescType;
 import com.od.enums.OrderStatusType;
-import com.od.model.Transaction;
-import com.od.model.TransactionPage;
-import com.od.requestModel.CreateOrderRequest;
+import com.od.requestModel.SearchOrderRequestModel;
+import com.od.requestModel.CreateOrderRequestModel;
 import com.od.responseModel.CreateOrderResponseModel;
 import com.od.responseModel.RetrieveUserResponseModel;
 import com.od.responseModel.SearchOrderResponseModel;
 import com.od.responseModel.UpdateOrderStatusResponseModel;
 import com.od.service.MiddlewareService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +22,7 @@ public class MiddlewareController {
     MiddlewareService middlewareService;
 
     @RequestMapping(path= "/order", method = RequestMethod.POST)
-    public ResponseEntity<CreateOrderResponseModel> createOrder(@RequestBody CreateOrderRequest createOrderRequest)
+    public ResponseEntity<CreateOrderResponseModel> createOrder(@RequestBody CreateOrderRequestModel createOrderRequest)
     {
         CreateOrderResponseModel responseModel = middlewareService.createOrder(createOrderRequest);
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
@@ -39,14 +36,20 @@ public class MiddlewareController {
     }
 
     @RequestMapping(path= "/order/{trxRefId}/status", method = RequestMethod.PUT)
-    public ResponseEntity<UpdateOrderStatusResponseModel> retrieveUser(@PathVariable Long trxRefId, @RequestParam OrderStatusType status, @RequestParam OrderStatusDescType statusDesc, @RequestParam String remarks)
+    public ResponseEntity<UpdateOrderStatusResponseModel> retrieveUser(@PathVariable Long trxRefId, @RequestParam OrderStatusType status,
+                                                                       @RequestParam OrderStatusDescType statusDesc, @RequestParam String remarks)
     {
         UpdateOrderStatusResponseModel responseModel = middlewareService.updateOrderStatus(trxRefId, status, statusDesc, remarks);
         return ResponseEntity.status(HttpStatus.OK).body(responseModel);
     }
 
-    @RequestMapping(path= "/searchOrder", method = RequestMethod.GET)
-    public ResponseEntity<SearchOrderResponseModel> searchOrders(TransactionPage transactionPage) {
+//    @RequestMapping(path= "/searchOrder", method = RequestMethod.GET)
+//    public ResponseEntity<SearchOrderResponseModel> searchOrders(TransactionPage transactionPage) {
+//        return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);
+//    }
+
+    @RequestMapping(path= "/searchOrder", method = RequestMethod.POST)
+    public ResponseEntity<SearchOrderResponseModel> searchOrders(@RequestBody SearchOrderRequestModel transactionPage) {
         return new ResponseEntity<>(middlewareService.getOrders(transactionPage), HttpStatus.OK);
     }
 
